@@ -122,7 +122,6 @@ int ip_validation(char *ip){
     char *ip_split;
     int bool =1;
     int count = 0;
-    int ip_size;
     ip_split = strtok(ip, ".");
     while (ip_split != NULL && bool ==1)
     {
