@@ -111,4 +111,6 @@ int ip_validation(char *ip){ //Retorna 1 si es valido y 0 si no lo es
 }
 int ConvertAscii(int number){char ascii = number; return ascii; }
 int randomize(){return 1 + rand() / (RAND_MAX / (6 - 1 + 1) + 1);}
+
 char *concat(char word1[100], char word2[100]){return strcat(word1, word2);}
+
