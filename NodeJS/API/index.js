@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-
+    
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) =>{
@@ -19,6 +19,10 @@ app.get('/sum', (req, res) =>{
 
 
 app.post('/', (req, res) =>{
+    console.log(req);
+    res.send('This was a Post request');
+});
+app.post('/sql', (req, res) =>{
     console.log(req);
     res.send('This was a Post request');
 });
