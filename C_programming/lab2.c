@@ -27,7 +27,7 @@ int main(void) {
             puts("3: Interpersing between lower and upper case");
             puts("4: Replace letter(input: String,letter_to_change,how_to_change)");
             puts("5: Execute linux command in console");
-            puts("0: Salir");
+            puts("0: Exit");
             scanf("%d", &op);
         }
 
@@ -46,19 +46,19 @@ int main(void) {
 
 void lowerCase(){
     scanf("%c",&temp);
-            int i = 0;
-            system("clear");
-            char name[50];
-            printf("input something\n");
-            scanf("%[^\n]",name);
-            while( name[i] ) {
-                putchar(tolower(name[i]));
-                i++;
-            }
+    int i = 0;
+    system("clear");
+    char name[50];
+    printf("input something\n");
+    scanf("%[^\n]",name);
+    while( name[i] ) {
+        putchar(tolower(name[i]));
+        i++;
+    }
             
-            puts("\n \n \n....Escribe 1(Para volver a hacerlo) o Escribe 0(para volver al menu)");
-			scanf("%d", &try_again);
-            p=1;
+    puts("\n \n \n....Escribe 1(Para volver a hacerlo) o Escribe 0(para volver al menu)");
+	scanf("%d", &try_again);
+    p=1;
 }
 
 void upperCase(){
