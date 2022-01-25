@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#define MAX_NAME_SZ 256
+
 
 int op = 1;
 int p = 0;

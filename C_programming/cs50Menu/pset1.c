@@ -1,5 +1,6 @@
 #include "psets.h"
 #include <math.h>
+#include <stdlib.h>
 #define PSET1_MENU "\nMENU PSET 1\n--------------\n1: mario_less\n2: mario_more\n3: cash\n4: credit\n0: Go back to main menu"
 char temp; //temp statement to clear the buffer
 void mario_less();
