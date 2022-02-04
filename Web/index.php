@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,17 +7,16 @@
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./scripts/script.js"></script>
-
 </head>
 <body>
     <div class="logo"><img src="./img/logo.png" alt="logo"></div>
     <?php require './scripts/db.php' ?>
     <form method='POST'>
-        <input type="text" placeholder="Nombre de Usuario" id="usuario" name = 'user' class='data'>
-        <input type="password" id="password" placeholder="Contraseña" class='data' name='password'>
+        <input type="text" placeholder="Nombre de Usuario" id="usuario" name = 'user' class='data' required pattern='.*'>
+        <input type="password" id="password" placeholder="Contraseña" class='data' name='password' required pattern='.*'>
         <input type="submit" value="login" class='button' name="submito">
     </form>
-
 </body>
+
+
 </html>

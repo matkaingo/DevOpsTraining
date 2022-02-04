@@ -1,154 +1,205 @@
 body {
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  .navigation ul {
-    margin: 0;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-  .navigation li {
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 20px 20px 12px;
-    display: inline-block;
-    text-transform: uppercase;
-    opacity: 0.4;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  }
+.navigation ul {
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
 
+.navigation li {
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 20px 20px 12px;
+  display: inline-block;
+  text-transform: uppercase;
+  opacity: 0.4;
+  border-bottom: 5px solid;
+  border-radius: 5px;
+  border-color: white;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
 
-  .navigation li:hover{
-      opacity: 0.6 !important;
-      border-bottom: 5px solid !important;
+#pls {
+  right: 20px;
+  position: absolute;
+}
 
-  }
+#pls:hover {
+  opacity: 0.6 !important;
+  border-bottom: 5px solid !important;
+  border-radius: 5px;
+  border-color: red;
+  color: red;
+}
 
-  .logo{
-      text-align: center;
-      padding: 100px 60px 60px;
-      max-width: 100;
-      min-width: none;
-  }
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: orange;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.4;
+}
 
-  input.data {
-        display: block;
-        padding: 20px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 15px;
-        width: 300px;
-        font-family: 'Raleway', sans-serif;
-        text-align: center;
-        font-size: 15px;
-        font-weight: bold;
-        outline: 0;
-        border:0;
-        border-bottom: 1px solid;
-        border-radius: 10px;
-        border-color: grey;
-  }
-  ::placeholder{
-      opacity: 0.2;
-  }
+.navigation li:hover {
+  opacity: 0.6 !important;
+  border-bottom: 5px solid !important;
+  border-radius: 5px;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
 
-  input.data:hover{
-    border-radius: 10px;
-    border-color: black;
-    border: 2px solid;
-  }
+.logo {
+  text-align: center;
+  padding: 100px 60px 60px;
+  max-width: 100;
+  min-width: none;
+}
 
-  input.button{
-    display: block;
-        padding: 20px;
-        color: white;
-        background-color: black;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 15px;
-        width: 300px;
-        font-family: 'Raleway', sans-serif;
-        text-align: center;
-        font-size: 15px;
-        font-weight: bold;
-        border-radius: 10px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-  }
+input.data {
+  display: block;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  width: 300px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 10px;
+  border-color: grey;
+}
 
-  input.button:hover{
-    background-color: rgb(194, 191, 191);
-  }
+::-webkit-input-placeholder {
+  opacity: 0.2;
+}
 
-  .ocultar {
-    display: none;
-  }
+:-ms-input-placeholder {
+  opacity: 0.2;
+}
 
-  .mostrar {
-    display:block;
-    margin:0px;
-  }
+::-ms-input-placeholder {
+  opacity: 0.2;
+}
 
-  #main{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    margin: 150px;
-  }
+::placeholder {
+  opacity: 0.2;
+}
 
-  form{
-    padding-top: 40px;
-    margin: 0 auto;
-  }
+input.data:hover {
+  border-radius: 10px;
+  border-color: black;
+  border: 2px solid;
+}
 
-  h1 {
-    text-align: center;  
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  
-  }
+input.button {
+  display: block;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  width: 300px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
 
-  h2 {
-    text-align: center;  
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: red;
-    font-size: 12px;
-    opacity: 0.3;
-  }
-  h3 {
-    text-align: center;  
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: green;
-    font-size: 50px;
-    opacity: 0.3;
-  }
+input.button:hover {
+  background-color: #c2bfbf;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 
-  table{
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-    
-  }
+.ocultar {
+  display: none;
+}
 
-  thead {
-    opacity: 0.6;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 30px;
-    background-color: grey;
-    
+.mostrar {
+  display: block;
+  margin: 0px;
+}
 
-  }
+#main {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 150px;
+}
 
-  th, td{
-    padding: 55px;
-    letter-spacing: 2px;
-    color: black;
-    
-  }
- 
+form {
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: red;
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: green;
+  font-size: 10px;
+  opacity: 0.3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  opacity: 0.6;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+  background-color: grey;
+}
+
+th, td {
+  padding: 55px;
+  letter-spacing: 2px;
+  color: black;
+}
+
+footer {
+  text-align: right;
+}
+/*# sourceMappingURL=styles.css.map */

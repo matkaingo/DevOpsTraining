@@ -17,7 +17,7 @@
         }
       }
       try {
-        $servername = "localhost";
+        $servername = "dev-ohio-phpapp-db.c90htr5rphcp.us-east-2.rds.amazonaws.com";
         $conn = new PDO("mysql:host=$servername;dbname=users", $_SESSION['user'], $_SESSION['password']);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stmt = $conn->prepare("SELECT username FROM users");
